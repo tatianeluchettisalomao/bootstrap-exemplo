@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exemplo</title>
-      <link href="/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="css/default.css" rel="stylesheet" />
-  </head>
-  <body>
-      <nav class="navbar navbar-expand-lg navbar-ligth">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/ham-ico.png" alt="Icone" width="32" height="32" />
-            Larika
 
-          </a>
-            <button class="navbar-tooggler" type="button"
-            data-bs-toog="collapse" aria-expanded="false"
-            data-bs-target="navbarMain">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/default.css" rel="stylesheet" />
+</head>
 
-            </button>
-          </a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/ham-ico.png" alt="Icone" width="32" height="32" />
+        Larika
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
+        data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home Page</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+          id="menulink" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">Cardápio</a>
+          <ul class="dropdown-menu" aria-labelledby="menulink">
+            <li>
+              <a class="dropdown-item">Hamburguer</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Hot Dog</a>
+            </li>
+          </ul>
+          </li>
+        </ul>
         </div>
-      </nav>
-  </body>
+    </div>
+  </nav>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
